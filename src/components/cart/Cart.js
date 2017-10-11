@@ -18,7 +18,6 @@ class Cart extends Component{
     }
 
     addNewItem(e) {
-        e.prevent.default();
         let productParts = this.state.newItem.split('-');
         const newProduct = {name: productParts[0], price: productParts[1], quantity: 1}
 
@@ -39,7 +38,7 @@ class Cart extends Component{
             <div>
               <form>
                   <input type="text" value={newItem} onChange={(e) => this.handleChange(e)} placeHolder="Enter new item"/>
-                  <input type="submit" value="ADD" onClick={(e) => this.addNewItem(e)} />
+                  <input type="button" value="ADD" onClick={(e) => this.addNewItem(e)} />
               </form>
 
               <table>
