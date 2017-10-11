@@ -1,0 +1,19 @@
+body{
+    background-color: palegreen;
+    text-align: center
+}
+
+h2 {
+    text-transform: uppercase;
+    color: blue;
+}
+
+table {
+    border: 1px;
+}
+
+table td 
+{
+    text-align:center; 
+    vertical-align:middle;
+}
